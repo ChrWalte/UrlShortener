@@ -1,0 +1,20 @@
+.shorten-container {
+  padding-top: 15%;
+}
+
+.required {
+  color: red;
+}
+
+.group {
+  padding: 1%;
+}
+
+input {
+  padding: 5px;
+  width: 100%;
+
+  ::active {
+    border: none;
+  }
+}

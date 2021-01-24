@@ -1,0 +1,51 @@
+<div class="shorten-container">
+  <div class="row group">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div for="originalUrl"><span class="required">*</span>Original Url:</div>
+      <input
+        id="originalUrl"
+        placeholder="https://christophermpwalters/"
+        [(ngModel)]="completeUrl.OriginalUrl"
+      />
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="row group">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div for="shortUrlPath">Short Url Path:</div>
+      <input
+        id="shortUrlPath"
+        placeholder="cmpw"
+        [(ngModel)]="completeUrl.ShortUrlPath"
+      />
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="row group">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div for="shortUrlPath">New Short Url:</div>
+      <div for="shortUrlPath">{{ newShortUrl }}</div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-12">
+      <button class="btn btn-sm btn-dark" [disabled]="!isForumValid()">
+        Create Short Url
+      </button>
+    </div>
+  </div>
+
+  <div class="row group">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div for="shortUrlPath">{{ responseMessage }}</div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
